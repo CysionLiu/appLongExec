@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+<title>test1</title>
+<meta name="keywords" content="test1" />
+<meta name="description" content="我在悦己派发现了_test1，快来围观！" />
+<!-- 微信分享图 -->
+<meta name="share-pic-weixin" content="http://js.selfimg.com.cn/self/events/images/share.jpg"/>
+<!-- 分享URL -->
+<meta name="share-url" content="http://event.test.self.com.cn/self.php/events/40.html"/>
+<meta name="share-pic-app" content="http://css.selfimg.com.cn/self/mtrycenter-v2/images/sharepic1.png"/>
+<!-- common css start -->
+<link rel="stylesheet" href="http://css.selfimg.com.cn/cssreset/reset-mobile.css?20170337">
+<link rel="stylesheet" href="http://assets.test.selfimg.com.cn/self/events/css/global.css?20170337">
+<!-- common css end -->
+<link rel="stylesheet" href="http://assets.test.selfimg.com.cn/self/events/css/pay.css?20170337">
+</head>
+<body>
+<header>
+<a href="javascript:history.back();" class="back"><i></i></a><a href="http://event.test.self.com.cn/self.php/events/index" class="logo">
+<img src="http://assets.test.selfimg.com.cn/self/events/images/logo.png">
+</a>
+<a href="http://event.test.self.com.cn/self.php/events/u.html" class="user"><i></i></a>
+
+</header>
+<section class="pay">
+<form id="myForm" action="http://event.test.self.com.cn/self.php/events/pay" method="post">
+<input name="pay_method" type="hidden" value="1">
+<input id="aid" name="aid" type="hidden" value="303">
+<input id="eid" name="eid" type="hidden" value="40">
+<div class="title">活动支付EVENTS<em></em></div>
+<div class="detail">
+<p>订单：2017071450826</p>
+<p>活动：test1</p>
+<p>时间：2017-07-12</p>
+</div>
+<div class="fee-title">报名费</div>
+<div class="fee-number">¥0.01</div>
+<div class="fee-title">支付方式</div>
+<div class="pay-item">
+<div class="item wechat"><label>微信支付</label><em></em><i></i></div>
+<div class="item selected alipay"><label>支付宝</label><em></em><i></i></div>
+</div>
+<div class="countdown" data-time="1500013686">
+支付剩余时间<label class="mins">00</label>:<label class="secs">00</label>
+</div>
+
+<div node-id="h5">
+<a href="#" class="btn" node-id="alipay">确认支付</a>
+<a href="javascript:;" class="btn wx" node-id="wxpay">确认支付</a>
+<a href="javascript:alert('支付未完成，请在30分钟内尽快支付，否则订单失效。');location.href='http://event.test.self.com.cn/self.php/events/pendingPay.html'" class="btn cancel">取消</a>
+</div>
+<div class="bottom-app clearfix" node-id="app">
+<a href="javascript:alert('支付未完成，请在30分钟内尽快支付，否则订单失效。');location.href='http://event.test.self.com.cn/self.php/events/pendingPay.html'" class="apply disable">取消</a>
+<a href="#" class="apply" id="alipay" node-id="alipay">确认支付</a>
+<a href="javascript:;" class="apply" id="wxpay">确认支付</a>
+<!-- <a href="" class="apply disable">已结束</a> -->
+</div>
+</form>
+
+
+</section>
+
+
+<!-- common js start -->
+<script src="http://js.selfimg.com.cn/gallery/zepto/1.1.4/zepto.min.js?20170337"></script>
+<script src="http://js.selfimg.com.cn/??lib/jweixin-1.0.0.js,brickjs/mshare/0.1.1/mshare.min.js?20170337"></script>
+<script src="http://assets.test.selfimg.com.cn/self/events/js/global.js?20170337"></script>
+<!-- common js end --><script src="http://assets.test.selfimg.com.cn/self/events/js/pay.js?20170337"></script>
+<script type="text/javascript">
+var wx_order_url = 'http://event.test.self.com.cn/self.php/events/wxapppay';
+var wx_h5_order_url = 'http://event.test.self.com.cn/self.php/events/wxpay';
+var wx_pay_fail_url = 'http://event.test.self.com.cn/self.php/events/payResult';
+var wx_pay_success_url = '';
+var alipay_number = '198047230130401461130900';
+function wxPaySuccess(paid){
+if(paid){
+window.location.href= wx_pay_success_url
+}else{
+window.location.href= wx_pay_fail_url
+}
+}
+function aliPaySuccess(){
+
+if(confirm('您是否已成功付款？')){
+wx_pay_success_url = wx_pay_fail_url +'?orderid='+alipay_number+'&type=alipay';
+window.location.href = wx_pay_success_url;
+}else{
+wx_pay_success_url = wx_pay_fail_url +'?orderid='+alipay_number+'&type=alipay';
+window.location.href =wx_pay_success_url;
+}
+}
+</script>
+<!-- 统计代码 -->
+<!--iresearch-->
+<script>
+(function (G,D,s,c,p) {
+c={
+UA:"UA-self-000001", 
+NO_FLS:0, 
+WITH_REF:1, 
+URL:'http://js.selfimg.com.cn/self/www/js/iwt-min.js',
+};
+G._iwt?G._iwt.track(c,p):(G._iwtTQ=G._iwtTQ || []).push([c,p]),!G._iwtLoading && lo();
+function lo(t) {
+G._iwtLoading=1;s=D.createElement("script");s.src=c.URL;
+t=D.getElementsByTagName("script");t=t[t.length-1];
+t.parentNode.insertBefore(s,t);
+}
+})(this,document);
+</script>
+<!--GA-->
+<script type="text/javascript">
+try {
+var _gaq = _gaq || []; 
+_gaq.push(['selfTracker._setAccount', 'UA-1848314-1']);
+_gaq.push(['selfTracker._setDomainName', '.self.com.cn']);
+_gaq.push(function() {
+var selfTracker = _gat._getTrackerByName('selfTracker');
+if(window._s_c_d_) {
+_s_c_d_.detectChannel(selfTracker);
+}
+});
+//_gaq.push(['selfTracker._setAllowHash', false]);
+_gaq.push( ['selfTracker._trackPageview']);
+} catch(err) {}
+</script>
+
+<script type="text/javascript"> (function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = "http://js.selfimg.com.cn/lib/ga/ga.js";
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+<!--baidu-->
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F6f33fbaa77cc1f26cabae24ffe94f1f0' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript" src="http://js.selfimg.com.cn/statistics/total.js"></script>
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KTPPDT" 
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KTPPDT');</script>
+<!-- End Google Tag Manager -->
+<!-- CN Analytics -->
+<script>
+(function (i, s, o, g, r, a, m) {
+i['CNAnalyticsObject'] = r;
+i[r] = i[r] || function () {
+(i[r].q = i[r].q || []).push(arguments)
+}, i[r].l = 1 * new Date();
+a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+a.async = 1;
+a.src = g;
+m.parentNode.insertBefore(a, m)
+})(window, document, 'script', '/assets/analytics.js', 'cna');
+cna('create', 'SF-XXXX-W', { 'alwaysSendReferrer': true });
+cna('send', 'pageview');
+</script>
+<!-- End CN Analytics -->
+</body>
+</html>
