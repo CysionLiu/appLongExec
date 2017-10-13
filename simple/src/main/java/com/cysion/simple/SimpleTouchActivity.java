@@ -12,6 +12,8 @@ public class SimpleTouchActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_simple_touch);
+        //默认decorview背景白色，普通vp背景无
+        getWindow().getDecorView().setBackgroundColor(0x550000);
         findViewById(R.id.btn_touch).setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
