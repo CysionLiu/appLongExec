@@ -8,6 +8,10 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="transparentTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
     <style name="accty_hint">
         <item name="android:textSize">20sp</item>
         <item name="android:layout_marginBottom">10dp</item>

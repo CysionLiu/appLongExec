@@ -16,7 +16,7 @@ public class MyApp extends Application {
         registerActivityLifecycleCallbacks(new ActivityLifecycleCallbacks() {
             @Override
             public void onActivityCreated(Activity activity, Bundle savedInstanceState) {
-                Log.e("flag--", "onActivityCreated(MyApp.java:19)-->>" + activity.getClass().getSimpleName());
+                Log.d("flag--", "onActivityCreated(MyApp.java:19)-->>" + activity.getClass().getSimpleName());
             }
 
             @Override
@@ -26,7 +26,7 @@ public class MyApp extends Application {
 
             @Override
             public void onActivityResumed(Activity activity) {
-                Log.e("flag--", "onActivityResumed(MyApp.java:29)-->>" + activity.getClass().getSimpleName());
+                Log.d("flag--", "onActivityResumed(MyApp.java:29)-->>" + activity.getClass().getSimpleName());
             }
 
             @Override
@@ -36,17 +36,17 @@ public class MyApp extends Application {
 
             @Override
             public void onActivityStopped(Activity activity) {
-                Log.e("flag--", "onActivityStopped(MyApp.java:39)-->>" + activity.getClass().getSimpleName());
+                Log.d("flag--", "onActivityStopped(MyApp.java:39)-->>" + activity.getClass().getSimpleName());
             }
 
             @Override
             public void onActivitySaveInstanceState(Activity activity, Bundle outState) {
-                Log.e("flag--", "onActivitySaveInstanceState(MyApp.java:44)-->>" + activity.getClass().getSimpleName());
+
             }
 
             @Override
             public void onActivityDestroyed(Activity activity) {
-                Log.e("flag--", "onActivityDestroyed(MyApp.java:49)-->>" + activity.getClass().getSimpleName());
+                Log.d("flag--", "onActivityDestroyed(MyApp.java:49)-->>" + activity.getClass().getSimpleName());
             }
         });
     }

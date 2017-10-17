@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -70,6 +71,7 @@ public class MainActivity extends AppCompatActivity {
     private List<Class<?>> fillData() {
         List<Class<?>> temp = new ArrayList<>();
         temp.add(SimpleTouchActivity.class);
+        temp.add(JobActivity.class);
         return temp;
     }
 
@@ -79,5 +81,11 @@ public class MainActivity extends AppCompatActivity {
             strs.add(mActivites.get(i).getSimpleName());
         }
         return strs;
+    }
+
+    @Override
+    protected void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
+        Log.e("flag--","onNewIntent(MainActivity.java:89)-->>");
     }
 }
