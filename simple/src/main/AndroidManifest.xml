@@ -34,8 +34,9 @@
         <activity
             android:name=".FakeActivity"
             android:taskAffinity=".test"
-            android:theme="@style/transparentTheme"
-            >
+            android:theme="@style/transparentTheme">
+        </activity>
+        <activity android:name=".AidlActivity">
         </activity>
     </application>
 

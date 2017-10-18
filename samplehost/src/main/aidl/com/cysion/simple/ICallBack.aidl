@@ -1,13 +1,12 @@
-// ITest.aidl
+// ICallBack.aidl
 package com.cysion.simple;
-
+import com.cysion.simple.Book;
 // Declare any non-default types here with import statements
 
-interface ITest {
+interface ICallBack {
     /**
      * Demonstrates some basic types that you can use as parameters
      * and return values in AIDL.
      */
-    void basicTypes(int anInt, long aLong, boolean aBoolean, float aFloat,
-            double aDouble, String aString);
+    void notify(in Book book);
 }

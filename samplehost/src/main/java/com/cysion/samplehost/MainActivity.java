@@ -74,4 +74,8 @@ public class MainActivity extends AppCompatActivity {
         }
         Log.e("flag--","showSelf(MainActivity.java:56)-->>"+packageCodePath);
     }
+
+    public void nextPage(View view) {
+
+    }
 }

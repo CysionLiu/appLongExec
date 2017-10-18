@@ -72,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
         List<Class<?>> temp = new ArrayList<>();
         temp.add(SimpleTouchActivity.class);
         temp.add(JobActivity.class);
+        temp.add(AidlActivity.class);
         return temp;
     }
 
