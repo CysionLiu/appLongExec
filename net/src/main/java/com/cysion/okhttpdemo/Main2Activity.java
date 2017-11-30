@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.graphics.Point;
 import android.os.Bundle;
 import android.os.Handler;
-import android.os.Message;
 import android.support.annotation.IntDef;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -40,28 +39,7 @@ public class Main2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
         Log.e("flag--","onCreate(Main2Activity.java:41)-->>");
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                Log.e("flag--","run(Main2Activity.java:44)-->>");
-                Handler handler = new Handler(){
-                    @Override
-                    public void handleMessage(Message msg) {
-                        super.handleMessage(msg);
-                        Log.e("flag--","handleMessage(Main2Activity.java:49)-->>");
 
-                    }
-                };
-                handler.sendEmptyMessage(100);
-                Log.e("flag--","run(Main2Activity.java:55)-->>");
-                handler.post(new Runnable() {
-                    @Override
-                    public void run() {
-                        Log.e("flag--","run(Main2Activity.java:58)-->>");
-                    }
-                });
-            }
-        }).start();
 //        mView = (WebView) findViewById(R.id.web);
 //        mView.setWebViewClient(new WebViewClient() {
 //            @Override

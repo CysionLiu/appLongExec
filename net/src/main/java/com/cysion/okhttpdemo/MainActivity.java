@@ -6,15 +6,12 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
-import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.StringDef;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.app.NotificationCompat;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -36,8 +33,6 @@ import okhttp3.Callback;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
-
-import static android.graphics.Color.*;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -72,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void get01(View view) {
 
-        Picasso.with(this).load(R.id.ly_gloabal).placeholder(R.id.ly_gloabal).centerCrop().into(new ImageView(this));
+        Picasso.with(this).load(R.id.ly_gloabal).placeholder(R.mipmap.ic_launcher).into(new ImageView(this));
         Request request = new Request.Builder().url(RestUrl.HTTP_GET).get().build();
         Call call = mClient.newCall(request);
         call.enqueue(new Callback() {
