@@ -25,8 +25,6 @@ import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 
 import okhttp3.Call;
 import okhttp3.Callback;
@@ -75,6 +73,7 @@ public class MainActivity extends AppCompatActivity {
             public void onFailure(Call call, IOException e) {
                 Log.e("flag--", "onFailure(MainActivity.java:33)-->>" + call.request().url());
                 Log.e("flag--", "onFailure(MainActivity.java:34)-->>" + e.getMessage());
+                Log.e("flag--","onFailure(MainActivity.java:78)---->>"+Thread.currentThread().getName());
 
             }
 
@@ -82,6 +81,7 @@ public class MainActivity extends AppCompatActivity {
             public void onResponse(Call call, Response response) throws IOException {
                 Log.e("flag--", "onResponse(MainActivity.java:39)-->>" + call.request().url());
                 Log.e("flag--", "onResponse(MainActivity.java:40)-->>" + response.body().string());
+                Log.e("flag--","onResponse(MainActivity.java:85)---->>"+Thread.currentThread().getName());
 
             }
         });
@@ -95,25 +95,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void post01(View view) {
-
-        Person per1 = new Person();
-        per1.setName("op");
-        Person per2 = new Person();
-        per2.setName("kl");
-        List<Person> arr1 = new ArrayList<>();
-        List<Person> arr2 = new ArrayList<>();
-
-        arr1.add(per1);
-        arr1.add(per2);
-        Log.e("flag--", "post01(MainActivity.java:87)-->>" + arr1.hashCode());
-
-        arr2.add(per1);
-        arr2.add(per2);
-        Log.e("flag--", "post01(MainActivity.java:91)-->>" + per1.hashCode());
-        Log.e("flag--", "post01(MainActivity.java:92)-->>" + per2.hashCode());
-        Log.e("flag--", "post01(MainActivity.java:93)-->>" + arr2.hashCode());
-        Log.e("flag--", "post01(MainActivity.java:94)-->>" + (Integer.MAX_VALUE + 1));
-        Log.e("flag--", "post01(MainActivity.java:95)-->>" + Integer.MAX_VALUE);
         Intent myIntent = new Intent(MainActivity.this, Main2Activity.class);
         startActivity(myIntent);
     }
