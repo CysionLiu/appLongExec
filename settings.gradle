@@ -1,1 +1,1 @@
-include ':net', ':samplehost', ':sampleclient', ':simple', ':ormdemo'
+include ':net', ':samplehost', ':sampleclient', ':simple', ':greendao', ':baselib'
