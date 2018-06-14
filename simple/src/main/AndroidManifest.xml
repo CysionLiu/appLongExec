@@ -38,6 +38,8 @@
         </activity>
         <activity android:name=".AidlActivity">
         </activity>
+        <activity android:name=".NaviActivity">
+        </activity>
     </application>
 
 </manifest>

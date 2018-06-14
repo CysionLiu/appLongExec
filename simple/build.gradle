@@ -28,6 +28,7 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     compile "com.android.support:appcompat-v7:${COMPILE_TOOLS}"
+    compile "com.android.support:design:${COMPILE_TOOLS}"
     compile "com.android.support.constraint:constraint-layout:${ALPHA}"
     testCompile 'junit:junit:4.12'
 }

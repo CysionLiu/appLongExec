@@ -73,6 +73,7 @@ public class MainActivity extends AppCompatActivity {
         temp.add(SimpleTouchActivity.class);
         temp.add(JobActivity.class);
         temp.add(AidlActivity.class);
+        temp.add(NaviActivity.class);
         return temp;
     }
 
