@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<CREATENOTEKEY>
+    <HEAD>
+        <CODE>消息标志</CODE>
+        <SID> </SID>
+        <TIMESTAMP>时间戳</TIMESTAMP>
+        <SERVICEID>应用标识</SERVICEID>
+    </HEAD>
+    <BODY>
+        <OPERATORID>操作员4A主帐号</OPERATORID>
+        <OPERATORIP>操作员客户端IP</OPERATORIP>
+        <MOBILE>静态密码验证通过后返回的手机号</MOBILE>
+    </BODY>
+</CREATENOTEKEY>

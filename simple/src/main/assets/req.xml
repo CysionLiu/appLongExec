@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<REQUEST>
+    <HEAD>
+        <CODE></CODE>
+        <SID>消息序列号</SID>
+        <TIMESTAMP>时间戳</TIMESTAMP>
+        <SERVICEID>应用标识</SERVICEID>
+    </HEAD>
+    <BODY>
+        <MAINACCT>主帐号</MAINACCT>
+        <LOGINPWD>主帐号对应密码</LOGINPWD>
+    </BODY>
+</REQUEST>

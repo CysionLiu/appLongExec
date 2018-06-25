@@ -40,6 +40,8 @@
         </activity>
         <activity android:name=".NaviActivity">
         </activity>
+        <activity android:name=".XStreamActivity">
+        </activity>
     </application>
 
 </manifest>

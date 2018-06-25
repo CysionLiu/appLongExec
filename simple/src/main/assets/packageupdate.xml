@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<result>
+    <version>1.0</version>
+    <upgradeMode>1</upgradeMode>
+    <package>
+        <versionName>1.00.01</versionName>
+        <url> <![CDATA[http://www.baidu.com]]></url>
+        <level>1</level>
+        <size>5550672</size>
+        <md5>A48F51DB26DE9EA8492AC5031647E8A2</md5>
+        <time>2016-06-27</time>
+        <desc> <![CDATA[ 1、修正了有线连接显示问题 ]]> </desc>
+    </package>
+    <package>
+        <versionName>1.10.01</versionName>
+        <url> <![CDATA[http://www.google.com]]></url>
+        <level>1</level>
+        <size>6660672</size>
+        <md5>A48F51DB26DE9EA8492AC5031647E8A2</md5>
+        <time>2016-06-27</time>
+        <desc> <![CDATA[ 1、修正了有线连接显示问题 ]]> </desc>
+    </package>
+</result>
+

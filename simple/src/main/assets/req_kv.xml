@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<NOTEKEYVALIDATE>
+    <HEAD>
+        <CODE>消息标志</CODE>
+        <SID>消息序列号</SID>
+        <TIMESTAMP>时间戳</TIMESTAMP>
+        <SERVICEID>应用标识</SERVICEID>
+    </HEAD>
+    <BODY>
+        <OPERATORID>操作员4A主帐号</OPERATORID>
+        <OPERATORIP>操作员客户端IP</OPERATORIP>
+        <NOTEKEY>密钥信息(加密)</NOTEKEY>
+    </BODY>
+</NOTEKEYVALIDATE>

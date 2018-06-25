@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding= 'UTF-8'?>
+<CREATENOTEKEY>
+    <HEAD>
+        <CODE>消息标志</CODE>
+        <SID>消息序列号</SID>
+        <TIMESTAMP>时间戳</TIMESTAMP>
+        <SERVICEID>应用标识</SERVICEID>
+    </HEAD>
+    <BODY>
+        <RSP>验证结果</RSP>
+        <ERRDESC>错误描述</ERRDESC>
+        <MSGID>消息序列号</MSGID>
+    </BODY>
+</CREATENOTEKEY>

@@ -20,15 +20,26 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        sourceCompatibility '1.7'
+        targetCompatibility '1.7'
+    }
 }
 
+
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
+
     compile "com.android.support:appcompat-v7:${COMPILE_TOOLS}"
     compile "com.android.support:design:${COMPILE_TOOLS}"
     compile "com.android.support.constraint:constraint-layout:${ALPHA}"
     testCompile 'junit:junit:4.12'
+
+    compile 'com.google.code.gson:gson:2.8.2'
+    compile 'com.jakewharton.timber:timber:4.5.1'
+
 }
