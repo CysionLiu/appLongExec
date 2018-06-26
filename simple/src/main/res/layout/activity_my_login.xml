@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cysion.simple.ui.LoginView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/ll_login_view"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+</com.cysion.simple.ui.LoginView>
