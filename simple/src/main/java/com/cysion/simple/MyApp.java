@@ -5,6 +5,11 @@ import android.app.Application;
 import android.os.Bundle;
 import android.util.Log;
 
+import com.cysion.simple.net.Caller;
+
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Created by Cysion Liu on 2017/10/13.
  */
@@ -13,6 +18,7 @@ public class MyApp extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+
         registerActivityLifecycleCallbacks(new ActivityLifecycleCallbacks() {
             @Override
             public void onActivityCreated(Activity activity, Bundle savedInstanceState) {

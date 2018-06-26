@@ -3,7 +3,8 @@
           package="com.cysion.simple">
 
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
-
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:name=".MyApp"
         android:allowBackup="true"
@@ -41,6 +42,8 @@
         <activity android:name=".NaviActivity">
         </activity>
         <activity android:name=".XStreamActivity">
+        </activity>
+        <activity android:name=".activity.NetActivity">
         </activity>
     </application>
 

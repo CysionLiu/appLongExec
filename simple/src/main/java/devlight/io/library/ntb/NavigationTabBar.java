@@ -1379,7 +1379,7 @@ public class NavigationTabBar extends View implements ViewPager.OnPageChangeList
             final float badgeBoundsHorizontalOffset =
                     (mModelSize * i) + (mModelSize * mBadgePosition.mPositionFraction);
 
-            // If is badge title only one char, so create circle else round rect
+            // If is badge title only one char, so load circle else round rect
             final float badgeMargin = mBadgeMargin * model.mBadgeFraction;
             if (model.getBadgeTitle().length() == 1) {
                 mBgBadgeBounds.set(
@@ -1926,7 +1926,7 @@ public class NavigationTabBar extends View implements ViewPager.OnPageChangeList
         }
     }
 
-    // Resize interpolator to create smooth effect on pointer according to inspiration design
+    // Resize interpolator to load smooth effect on pointer according to inspiration design
     // This is like improved accelerated and decelerated interpolator
     protected class ResizeInterpolator implements Interpolator {
 

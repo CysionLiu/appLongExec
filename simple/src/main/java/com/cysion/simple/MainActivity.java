@@ -13,6 +13,8 @@ import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.cysion.simple.activity.NetActivity;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -81,6 +83,7 @@ public class MainActivity extends AppCompatActivity {
         temp.add(AidlActivity.class);
         temp.add(NaviActivity.class);
         temp.add(XStreamActivity.class);
+        temp.add(NetActivity.class);
         return temp;
     }
 

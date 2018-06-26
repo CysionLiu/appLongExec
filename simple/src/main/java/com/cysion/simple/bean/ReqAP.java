@@ -1,7 +1,5 @@
 package com.cysion.simple.bean;
 
-import java.util.List;
-
 /**
  * Created by cysion on 2018\6\25 0025.
  * 1.1.1.1.	静态密码验证接口
@@ -44,7 +42,7 @@ public class ReqAP {
         private String SID;
         private String TIMESTAMP;
         private String SERVICEID;
-        private List<?> CODE;
+        private String CODE;
 
         public String getSID() {
             return SID;
@@ -70,12 +68,12 @@ public class ReqAP {
             this.SERVICEID = SERVICEID;
         }
 
-        public List<?> getCODE() {
+        public String getCODE() {
             return CODE;
         }
 
-        public void setCODE(List<?> CODE) {
-            this.CODE = CODE;
+        public void setCODE(String aCODE) {
+            CODE = aCODE;
         }
     }
 
