@@ -2,8 +2,6 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion COMPILESDK_VERSION as int
-    buildToolsVersion BUILDTOOLS_VERSION
-
     defaultConfig {
         applicationId "com.cysion.simple"
         minSdkVersion MINSDK_VERSION as int
@@ -28,22 +26,22 @@ android {
 
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
+    api fileTree(include: ['*.jar'], dir: 'libs')
 
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
 
-    compile "com.android.support:appcompat-v7:${COMPILE_TOOLS}"
-    compile "com.android.support:design:${COMPILE_TOOLS}"
+    api "com.android.support:appcompat-v7:${BUILDTOOLS_VERSION}"
+    api "com.android.support:design:${BUILDTOOLS_VERSION}"
     compile "com.android.support.constraint:constraint-layout:${ALPHA}"
     testCompile 'junit:junit:4.12'
 
-    compile 'com.google.code.gson:gson:2.8.2'
-    compile 'com.jakewharton.timber:timber:4.5.1'
+    api 'com.jakewharton.timber:timber:4.5.1'
 
-    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    api 'com.google.code.gson:gson:2.8.2'
+    api 'com.squareup.retrofit2:retrofit:2.3.0'
 
-    compile 'com.squareup.retrofit2:converter-scalars:2.3.0'
+    api 'com.squareup.retrofit2:converter-scalars:2.3.0'
 
 }
